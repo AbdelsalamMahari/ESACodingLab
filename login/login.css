@@ -16,8 +16,10 @@ body {
     display: flex;
 }
 
-.img1 {
+.part1 {
     flex: 1;
+}
+.img1{
     padding: 50px;
 }
 
@@ -100,4 +102,13 @@ body {
 
 .links:hover {
     transform: scale(1.1);
+}
+
+.inputs, .link{
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    display: flex;
+    justify-content: center;
 }
