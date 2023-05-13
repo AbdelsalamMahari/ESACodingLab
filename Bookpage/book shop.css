@@ -1,33 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+  width: 100%;
+  background-color: #c12f2a93;
+  padding: 25px;
+}
+header h1{
+  font-weight: normal;
+  color: #fff;
+  padding-left: 35px;
+  text-decoration: none;
+}
+header a{
+  text-decoration: none;
+}
 .books-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-  }
-  
-  .book {
-    text-align: center;
-  }
-  
-  .book img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .book h3 {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .book a {
-    color: #666;
-    transition: color 0.3s ease;
-  }
-  
-  .book a:hover {
-    color:#ff0000;
-  }
-  section{
-    
-  }
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.book {
+  text-align: center;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.book a {
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.book a:hover {
+  color: #ff0000;
+}
+
+.book img{
+  width: 150px;
+}
+section{
+  padding: 60px;
+}
+section h2{
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #C12E2A;
+}
+.hr-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.hr-container hr {
+  flex: 1;
+  border: 1px solid #C12E2A;
+  margin: 10px 0;
+}
+
+.hr-container h2 {
+  margin: 0 10px; /* Add some spacing around the heading */
+}
+.color-two{
+  background-color: #fcba40b2;
+  margin: 20px;
+  border-radius: 15px;
+}
