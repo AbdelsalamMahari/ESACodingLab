@@ -1,39 +1,67 @@
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:linear-gradient(to top, #e31515a7, rgba(237, 189, 126, 0.781));
-}
-.books-container {
-    display:flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 30px;
-  }
-  header{
-    text-align: center;
-    background:linear-gradient(to bottom, #ca1b1b7b, rgba(237, 189, 126, 0.781));
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    color: #e31515a7;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  }
-  .book {
-    text-align: center;
-  }
-  .book img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 5px;
-  }
-  .book h3 {
-    font-size: 18px;
-    color: #333;
-  }
-  .book a {
-    color: #666;
-    transition: color 0.3s ease;
-  }
-  .book a:hover {
-    color:#ff0000;
-  }
+:root {
+  --red: #C12E2A;
+  --yellow: #FCB940;
+  --orange: #E8A101;
+}
+
+* {
+  font-family: 'raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+.sup-cont{
+  background-color: #6666668f;
+  margin: 40px 40px;
+  padding-top: 30px;
+  border-radius: 15px;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+header {
+  text-align: center;
+  background-color: var(--red);
+  padding: 20px;
+}
+header h1{
+  color: #fff;
+  font-weight: normal;
+}
+
+.book {
+  text-align: center;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.book h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.book a {
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.book a:hover {
+  color: #ff0000;
+}
