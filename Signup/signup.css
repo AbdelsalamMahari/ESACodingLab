@@ -63,6 +63,10 @@ body{
     border-radius: 10px;
     border: #F5F5F5;
 }
+.button{
+    display: flex;
+    justify-content: center;
+}
 .case::placeholder{
     color: #F5F5F5;
 }
