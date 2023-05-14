@@ -8,20 +8,7 @@
   scroll-behavior: smooth;
 }
 
-header{
-  width: 100%;
-  background-color: #c12f2a93;
-  padding: 25px;
-}
-header h1{
-  font-weight: normal;
-  color: #fff;
-  padding-left: 35px;
-  text-decoration: none;
-}
-header a{
-  text-decoration: none;
-}
+
 .books-container {
   display: flex;
   justify-content: center;
@@ -56,9 +43,10 @@ header a{
 .book img{
   width: 150px;
 }
-section{
+section.color1, section.color-two{
   padding: 60px;
 }
+
 section h2{
   font-size: 30px;
   text-align: center;
@@ -78,10 +66,143 @@ section h2{
 }
 
 .hr-container h2 {
-  margin: 0 10px; /* Add some spacing around the heading */
+  margin: 0 10px;
 }
 .color-two{
   background-color: #fcba40b2;
   margin: 20px;
   border-radius: 15px;
 }
+
+/*Header*/
+header {
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 999;
+}
+
+.head-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+}
+
+.nav-top a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 30px;
+  color: black;
+}
+
+.nav-top i {
+  padding-right: 5px;
+}
+
+.top-icons a {
+  color: black;
+  font-size: larger;
+}
+
+.in,
+.fb,
+.sc,
+.tt,
+.wa {
+  padding-left: 20px;
+
+}
+
+
+.head-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+}
+
+span {
+  font-weight: normal;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 30px;
+  color: #000000;
+}
+
+.navigation a:hover {
+  color: var(--red);
+}
+
+/*Footer*/
+footer{
+  background-color: var(--grey);
+}
+
+.first-part{
+  display: flex;
+}
+.footer-logo{
+  flex: 1;
+}
+.footer-logo h1{
+  padding: 50px 80px;
+  font-size: 40px;
+}
+
+.footer-text {
+  flex: 1;
+  display: flex;
+  padding: 50px;
+  padding-right: 350px;
+}
+
+.footer-title{
+  padding-left: 50px;
+}
+
+.footer-title h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-title ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-title li {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+
+.footer-title a{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.second-part {
+  color: black;
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons a {
+  color: black;
+  font-size: larger;
+}
+
