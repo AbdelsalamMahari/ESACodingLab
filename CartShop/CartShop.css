@@ -1,0 +1,29 @@
+table, th, td{
+  border:1px solid black;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; 
+    height: 70px;
+    width: 120px;
+  }
+  section.add-cart-section{
+    display: flex;
+    justify-content: center;
+  }
+  .info-cart{
+    padding-left: 1050px;
+  }
+  p{
+    font-size: larger;
+  }
+  button{
+    font-size: normal;
+    left:100%;
+  }
+ .quan-input{
+width:50px;
+}
