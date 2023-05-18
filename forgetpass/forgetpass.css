@@ -1,0 +1,57 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+input[type="button"] ,
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#part2 {
+  display: none;
+
+}
+
+img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
