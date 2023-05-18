@@ -124,67 +124,68 @@ span {
 
 .res-container {
     display: flex;
+    justify-content: space-around;
     margin: 0px;
 }
 
 .res-container2 {
+    flex: 1;
+    justify-content: space-around;
+    max-width: 450px;
     border-radius: 20px;
     background-color: var(--yellow);
     margin: 15px 80px;
     padding: 20px;
-    width: fit-content;
-    height: fit-content;
 }
 
 .image {
-    max-width: 33%;
+    flex: 1;
+    justify-content: space-around;
+   max-width: fit-content;
     padding-right: 5%;
 }
 
 
-h2 {
+.res-h2 {
     text-align: center;
 }
 
 .form-group {
-    padding: 0px 50px;
-    width: 100%;
+    width: 410px;
+    padding-right: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
 }
 
 .form-group-ls {
-    width: 300px;
+    width: 400px;
     padding: 8px;
+    margin-top: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
 
-.form-group-ls label {
-    display: block;
-    margin-bottom: 5px;
-}
 
 .form-group input {
-    width: 95%;
+    width: 100%;
     padding: 8px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
-.form-group button {
-    width: 100%;
+.res-btn button {
+    width: 97.5%;
     padding: 8px;
+    margin-top: 5px;
     background-color: var(--orange);
+    border-radius: 3px;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
-.form-group button:hover {
+.res-btn button:hover {
     background-color: var(--orange);
 }
 
