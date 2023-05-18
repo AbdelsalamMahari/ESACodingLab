@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation1.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <h1>Library Reservation Room</h1>
+
+  <div class="description">
+    <p>Welcome to our library reservation room! Here, you can reserve a private room for studying, group meetings, or any other activities related to learning.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium libero, sit odit eum, officiis eligendi qui, odio earum ad est ipsam sed quis hic accusamus quasi beatae minus minima aspernatur!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et maxime consequuntur dicta provident nemo veritatis placeat, ipsa officiis veniam reprehenderit ad maiores totam incidunt laudantium quasi eveniet ut inventore laborum.</p>
+  </div>
+ 
+
+ 
+  
+    <div class="container">
+        <form class="container2">
+          <h2>Room Reservation</h2>
+            <div class="form-group">
+                <label for="room">Room:</label>
+                <select id="room" name="room" class="form-group-ls">
+                  <option value="room1">Study Room</option>
+                  <option value="room2">Meeting Room</option>
+                  <option value="room3">Presentation Room</option>
+                  <option value="room4">Quiet Room</option>
+                  <option value="room5">Group Discussion Room</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="number">Room Capasity:</label>
+                <input type="number" name="quantity" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Reservation Room</button><br><br>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <div class="image">
+          <img src="Library (2).gif" alt="library">
+        </div>
+    </div>
+</body>
+</html>
