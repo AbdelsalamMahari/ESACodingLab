@@ -33,7 +33,7 @@ td {
 section.add-cart-section {
   display: flex;
   justify-content: center;
-  padding: 50px 0px 8px 0px;
+  padding: 50px 0px 40px 0px;
 }
 
 .info-cart {
@@ -43,7 +43,7 @@ section.add-cart-section {
 }
 
 
-button{
+.two-btn{
   background-color: var(--yellow);
   border-color: var(--yellow);
   padding: 8px;
@@ -52,14 +52,32 @@ button{
   color: #fff;
 }
 
-
-button {
-  font-size: normal;
-  left: 100%;
+.checkout-btn{
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  width: 120px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: medium;
+  color: #fff;
 }
+
 
 .quan-input {
   width: 50px;
+}
+
+.fix{
+  padding-right: 340px;
+  padding-bottom: 100px;
+}
+
+tr.remove td{
+  border-color: transparent;
+}
+
+td.text-total{
+  text-align: left;
 }
 
 /*Header*/
@@ -194,8 +212,4 @@ footer {
 .social-icons a {
   color: black;
   font-size: larger;
-}
-.fix{
-  padding-right: 340px;
-  padding-bottom: 100px;
 }
