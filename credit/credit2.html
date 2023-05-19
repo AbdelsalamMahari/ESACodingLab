@@ -10,29 +10,29 @@
 <body>
     <main class="container_credit">
         <section class="ui">
-            <div class="container-left">
+            <div class="containercard-left">
                 <form id="credit-card">
-                    <div class="number-container">
+                    <div class="numbercard-container">
                         <label>Card Number</label>
                         <input type="text" name="card-number" id="card-number" maxlength="19" placeholder="1234 5678 9101 1121"
                         required
                         onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                     </div>
-                    <div class="name-container">
-                        <label>Holder</label>
+                    <div class="namecard-container">
+                        <label>Your Name</label>
                         <input type="text" name="name-text" id="name-text" maxlength="30" placeholder="Ali Nahle"
                         required
                         onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
                     </div>
-                    <div class="infos-container">
-                        <div class="expiration-container">
+                    <div class="infoscard-container">
+                        <div class="expirationcard-container">
                             <label>Valid-thru</label>
                             <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="02/40"
                             required
                             
                             onkeypress="return event.charCode >=48 && event.charCode <= 57">
                         </div>
-                        <div class="cvv-container">
+                        <div class="cvvcard-container">
                             <label>CVV</label>
                             <input type="text" name="cvv-text" id="cvv-text" maxlength="4" placeholder="1234"
                             required
@@ -42,7 +42,7 @@
                     <input type="submit" value="ADD" id="add">
                 </form>
             </div>
-            <div class="container-right">
+            <div class="containercard-right">
                 <div class="card">
                     <div class="intern">
                         <img class="approximation" src="aprox.png" alt="aproximation">
@@ -50,7 +50,7 @@
                             <div class="number-vl">1234 5678 9101 1121</div>
                         </div>
                         <div class="card-holder">
-                            <label>Holder</label>
+                            <label>Your Name</label>
                             <div class="name-vl">Ali Nahle</div>
                         </div>
                         <div class="card-infos">
@@ -68,7 +68,6 @@
                 </div>
             </div>
         </section>
-        <h1 class="hhh">hiiiii</h1>
     </main>
     <script src="credit2.js"></script>
 </body>
