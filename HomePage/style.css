@@ -243,6 +243,7 @@ span {
 
 .text-cont p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 .description1 {
@@ -272,6 +273,7 @@ span {
 
 .text-cont1 p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 .right-img1 {
@@ -680,3 +682,38 @@ h1 {
   }
 }
 
+/* Responsive */
+/* CSS for small screens (up to 768px) */
+@media (max-width: 840px) {
+  .head-top{
+    display: none;
+  }
+
+  .navigation {
+      display: none; /* Hide the navigation links by default */
+  }
+  
+  .books-for-all{
+    display: none;
+  }
+  .first-sec{
+    background-position: right;
+  }
+  .description{
+    flex-direction: column;
+  }
+  .description1{
+    flex-direction: column;
+  }
+  .first-part{
+    flex-direction: column;
+  }
+  .footer-text{
+    flex-direction: column;
+  }
+}
+
+/* CSS for larger screens */
+@media (min-width: 840px) {
+
+}
