@@ -3,6 +3,12 @@
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
 }
+:root {
+    --red: #C12E2A;
+    --yellow: #FCB940;
+    --orange: #1886a9;
+    --grey: #F5F5F5;
+}
 
 body {
     height: 100%;
@@ -28,11 +34,11 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-.container-left {
+.containercard-left {
     width: 50%;
 }
 
-.container-right {
+.containercard-right {
     width: 50%;
     display: flex;
     align-items: center;
@@ -42,7 +48,8 @@ body {
     width: 360px;
     height: 230px;
     margin: 0 auto;
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,140,177,1) 35%, rgba(0,29,125,1) 100%);
+    background: linear-gradient(45deg, var(--red) 10%,var(--yellow) 100%);
+  // background:var(--yellow);
     border: 1px solid rgba(0,0,0,.3);
     border-radius: 15px;
 }
@@ -95,12 +102,12 @@ body {
     text-transform: uppercase;
 }
 
-.number-container, .name-container {
+.numbercard-container, .namecard-container {
     display: flex;
     flex-direction: column;
 }
 
-.expiration-container, .cvv-container {
+.expirationcard-container, .cvvcard-container {
     width: 50%;
 }
 
@@ -126,11 +133,11 @@ input#valid-thru-text, input#cvv-text {
 
 input[type="submit"] {
     width: 95%;
-    background-color: #008cb1;
+    background-color:var(--yellow);
     cursor: pointer;
 }
 
-.infos-container {
+.infoscard-container {
     display: flex;
 }
 

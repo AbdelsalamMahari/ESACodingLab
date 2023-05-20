@@ -243,6 +243,7 @@ span {
 
 .text-cont p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 .description1 {
@@ -272,6 +273,7 @@ span {
 
 .text-cont1 p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 .right-img1 {
@@ -680,3 +682,84 @@ h1 {
   }
 }
 
+/* Responsive */
+
+@media (min-width: 1200px){
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .head-top{
+    display: none;
+  }
+
+  .navigation {
+      display: none;
+  }
+  
+  .books-for-all{
+    display: none;
+  }
+  .first-sec{
+    background-position: right;
+  }
+  .description{
+    flex-direction: column;
+  }
+  .description1{
+    flex-direction: column;
+  }
+  .first-part{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer-title{
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+  .footer-title li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-title h3{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .description{
+    flex-direction: column;
+    padding-right: 0px;
+  }
+  .left-part{
+    justify-content: center;
+    align-items: center;
+  }
+  .right-part1{
+    justify-content: center;
+    align-items: center;
+  }
+  .description1{
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .footer-text {
+    padding-left: 0px
+  }
+ 
+  .footer-logo h1 {
+    padding: 50px 40px;
+    font-size: 40px;
+  }
+}
