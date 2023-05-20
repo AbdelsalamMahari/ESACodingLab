@@ -683,9 +683,16 @@ h1 {
 }
 
 /* Responsive */
-
+.burger{
+  display: none;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 30px;
+}
 @media (max-width: 840px) {
-
+  .burger{
+    display: block;
+  }
   /* other */
   .none-hr{
     display: none;
