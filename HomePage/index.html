@@ -50,13 +50,30 @@
         </section>
         <hr class="my-hr none-hr">
         <section class="head-down">
-            <h1>BOOK<span>STORE</span></h1>
-            <nav class="navigation">
-                <a href="#">HOME</a>
-                <a href="file:///C:/Users/Toshiba/Desktop/Coding/ESA/LMS/Bookpage/book%20shop.html">SHOP</a>
-                <a href="file:///C:/Users/Toshiba/Desktop/Coding/ESA/LMS/Contact%20us/contact.html">CONTACT US</a>
-                <a href="file:///C:/Users/Toshiba/Desktop/Coding/ESA/LMS/About%20us/AboutUs.html">ABOUT US</a>
-                </nav>
+            <div class="logo">
+                <h1>BOOK<span>STORE</span></h1>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" class="active">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT US</a>
+                    </li>
+                    <li>
+                        <a href="">ABOUT US</a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </header>
 
@@ -551,6 +568,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+        }
+    </script>
 </body>
 
 </html>

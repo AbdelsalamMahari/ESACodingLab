@@ -119,6 +119,72 @@ span {
   color: var(--red);
 }
 
+.hamburger{
+  display: none;
+}
+
+.nav-bar ul{
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 30px;
+  color: #000000;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.nav-bar ul li a:hover{
+  color: var(--red);
+}
+
+@media only screen and (max-width: 840px){
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+  }
+  .nav-bar{
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: var(--red);
+    transition: 0.2s;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .nav-bar.active{
+    height: 400px;
+  }
+  .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul{
+    opacity: 1;
+  }
+  .nav-bar ul li a{
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+
 /*main with background and books for all*/
 .first-sec {
   margin: 0px 40px;
