@@ -684,13 +684,13 @@ h1 {
 
 /* Responsive */
 
-@media (min-width: 1200px){
-  .navbar {
+@media (max-width: 840px) {
+
+  /* other */
+  .none-hr{
     display: none;
   }
-}
 
-@media (max-width: 840px) {
   .head-top{
     display: none;
   }

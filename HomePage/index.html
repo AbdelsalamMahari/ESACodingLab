@@ -29,7 +29,7 @@
                     aria-expanded="false">
                     <i class="fa-regular fa-user"></i> MY ACCOUNT
                 </a>
-                
+
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>LOGIN</a>
                     </li>
@@ -48,7 +48,7 @@
                 </div>
             </nav>
         </section>
-        <hr class="my-hr">
+        <hr class="my-hr none-hr">
         <section class="head-down">
             <h1>BOOK<span>STORE</span></h1>
             <nav class="navigation">
@@ -56,42 +56,41 @@
                 <a href="file:///C:/Users/Toshiba/Desktop/Coding/ESA/LMS/Bookpage/book%20shop.html">SHOP</a>
                 <a href="file:///C:/Users/Toshiba/Desktop/Coding/ESA/LMS/Contact%20us/contact.html">CONTACT US</a>
                 <a href="file:///C:/Users/Toshiba/Desktop/Coding/ESA/LMS/About%20us/AboutUs.html">ABOUT US</a>
-            </nav>
         </section>
     </header>
 
     <section class="main">
-            <div class="first-sec">
-                <div class="books-for-all">
-                    <div class="title_cont">
-                        <div class="B_F">
-                            <p>
-                                B
-                            </p>
-                            <p>
-                                F
-                            </p>
-                        </div>
-                        <div class="O" class="color-changing-div"></div>
-                        <div class="O_R">
-                            <p>
-                                O
-                            </p>
-                            <p>
-                                R
-                            </p>
-                        </div>
-                        <div class="K_ALL">
-                            <p>
-                                KS
-                            </p>
-                            <p class="ALL">
-                                ALL
-                            </p>
-                        </div>
+        <div class="first-sec">
+            <div class="books-for-all">
+                <div class="title_cont">
+                    <div class="B_F">
+                        <p>
+                            B
+                        </p>
+                        <p>
+                            F
+                        </p>
+                    </div>
+                    <div class="O" class="color-changing-div"></div>
+                    <div class="O_R">
+                        <p>
+                            O
+                        </p>
+                        <p>
+                            R
+                        </p>
+                    </div>
+                    <div class="K_ALL">
+                        <p>
+                            KS
+                        </p>
+                        <p class="ALL">
+                            ALL
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="description">
@@ -551,6 +550,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+    <script>function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+      }</script>
 </body>
 
 </html>
