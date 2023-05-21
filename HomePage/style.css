@@ -43,6 +43,10 @@ header {
   font-weight: normal;
   padding-left: 30px;
   color: black;
+  transition: 0.4s;
+}
+.nav-top a:hover{
+  color: var(--red);
 }
 
 .nav-top i {
@@ -60,6 +64,7 @@ header {
 .top-icons a {
   color: black;
   font-size: larger;
+  transition: 0.4s;
 }
 
 .in,
@@ -89,6 +94,14 @@ header {
 .wa:hover {
   color: #25d366;
 }
+.search-btn{
+  background-color: #C12E2A;
+  border-color: #C12E2A;
+}
+.search-btn:hover{
+  background-color: var(--orange);
+}
+
 
 .head-down {
   display: flex;
@@ -128,11 +141,11 @@ span {
   transition: 0.2s;
 }
 .nav-bar ul li a:hover{
-  color: #fff;
-  background-color: #C12E2Ac6;
+  color: var(--red);
+  background-color: #fff;
 }
 
-@media only screen and (max-width: 840px){
+@media only screen and (max-width: 900px){
   .hamburger{
     display: block;
     cursor: pointer;
@@ -391,6 +404,10 @@ span {
 .footer-title a {
   text-decoration: none;
   color: #000000;
+}
+
+.footer-title a:hover{
+  color: var(--red);
 }
 
 
@@ -746,7 +763,7 @@ h1 {
 
 /* Responsive */
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
 
   /* other */
   .none-hr{
@@ -777,6 +794,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .footer-logo {
+    margin-bottom: -30px;
   }
   .footer-text{
     flex-direction: column;
