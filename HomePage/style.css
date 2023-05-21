@@ -107,18 +107,6 @@ span {
   font-weight: normal;
 }
 
-.navigation a {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: normal;
-  padding-left: 30px;
-  color: #000000;
-}
-
-.navigation a:hover {
-  color: var(--red);
-}
-
 .hamburger{
   display: none;
 }
@@ -141,7 +129,7 @@ span {
 }
 .nav-bar ul li a:hover{
   color: #fff;
-  background-color: var(--red);
+  background-color: #C12E2Ac6;
 }
 
 @media only screen and (max-width: 840px){
@@ -162,7 +150,7 @@ span {
     left: 0;
     right: 0;
     width: 100vw;
-    background: var(--red);
+    background: #c12f2af1;
     transition: 0.2s;
     overflow: hidden;
     border-bottom-right-radius: 50px;
@@ -841,4 +829,43 @@ h1 {
     padding: 50px 40px;
     font-size: 40px;
   }
+}
+
+@media (max-width: 840px) {
+  header h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+  }  
+  .title {
+    font-size: 25px;
+  }
+  .left-part {
+    display: none;
+  }
+  .text-cont {
+    font-size: 15px;
+  }
+  .text-cont1 {
+    font-size: 15px;
+  }
+  .right-part1{
+    display: none;
+  }
+  .footer-logo h1 {
+    font-size: 30px;
+  }
+  .footer-title h3 {
+    font-size: 15px;
+  }
+  .footer-title li {
+    font-size: 9px;
+  }
+  .footer-title2{
+    font-size: 10px;
+  }
+  .social-icons a {
+    font-size: small;
+  }
+  
 }
