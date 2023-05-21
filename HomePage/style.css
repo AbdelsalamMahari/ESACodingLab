@@ -314,6 +314,7 @@ span {
   padding: 20px;
   font-size: 20px;
   color: #fff;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2)
 }
 
 .text-cont p {
@@ -344,6 +345,7 @@ span {
   padding: 20px;
   font-size: 20px;
   color: #fff;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.2)
 }
 
 .text-cont1 p {
