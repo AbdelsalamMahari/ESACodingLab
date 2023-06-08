@@ -1,0 +1,29 @@
+.container{
+  margin: 30px 0;
+}
+.book{
+  background-color: #F5F5F5;
+  margin: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.3s ease;
+
+}
+.book:hover {
+  transform: scale(1.04);
+  opacity: 0.8;
+}
+img{
+  margin-top: -30px;
+  transition: 0.3s ease;
+}
+
+.title{
+  padding-top: 10px;
+}
+
+.book-icon{
+  margin: 0 6px;
+}
