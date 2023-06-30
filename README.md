@@ -1,2 +1,0 @@
-# ESACodingLab
-For our projects
