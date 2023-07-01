@@ -50,7 +50,7 @@
             <div class="modal-body">
                 <form id="cart-option-form" method="POST" action="addcart_action.php">
                     <input type="hidden" id="modal-book-id" name="id" value="">
-                    
+                    <input type="hidden" id="modal-qty" name="quantity" value="">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="purchase_option" id="purchase" value="purchase" checked>
                         <label class="form-check-label" for="purchase" style="color: #1886a9;">buy</label>
@@ -90,16 +90,19 @@
                 </div>
                 <div class="btns row">
                     <div class="col-sm-2">
-                        <input class="form-control" id="qty" type="number" placeholder="1">
+                        <input class="form-control" id="qty" value="1" min="1" max="100" type="number" placeholder="1">
                     </div>
                     <div class="col-sm-3">
-                    <button type="button" class="btn btn-primary add-cart" id="btn-primarye" data-bs-toggle="modal" data-bs-target="#myModal2" data-bookid="<?php echo $bookId; ?>">Add To Cart</button>
+                    <button type="button" class="btn btn-primary add-cart" id="btn-primarye" data-bs-toggle="modal" data-bs-target="#myModal2" data-bookid="<?php echo $bookId; ?>" onclick="setModalQuantity()">Add To Cart</button>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-1">
                     <form action="favorite_action.php" method="POST">
                       <input type="hidden" name="id" value="<?php echo $bookId; ?>">
-                      <button href="" class="btn btn-danger" id="btn-danger2"><i class="fa-solid fa-heart" style="color: white;"></i></button>
+                      <button class="btn btn-danger" id="btn-danger2"><i class="fa-solid fa-heart" style="color: white;"></i></button>
                     </form>
+                    </div>
+                    <div class="col-sm-3">
+                      <a href="#" class="btn btn-success" id="wa"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="infor">
@@ -123,12 +126,10 @@
 
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="details">
-                    <!-- Content details -->
                     <h3>Description</h3>
                     <p><?php echo $description; ?></p>
                 </div>
                 <div class="tab-pane fade" id="reviews">
-                    <!-- Reviews -->
                     <h3>CUSTOMER REVIEWS</h3>
                     <div class="review">
                         <div class="rating">

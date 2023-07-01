@@ -6,12 +6,9 @@ $newfname = $_POST['newfname'];
 $newlname = $_POST['newlname'];
 $email = $_SESSION['email'];
 
-// Validate input
 if (!empty($newfname) && !empty($newlname)) {
-    // Update query
     $query = "UPDATE register SET db_fname = '$newfname', db_lname = '$newlname' WHERE db_email = '$email'";
 
-    // Execute the query
     $result = mysqli_query($connection, $query);
 
     if ($result) {
@@ -23,6 +20,5 @@ if (!empty($newfname) && !empty($newlname)) {
      $msg = "First name and last name cannot be empty.";
 }
 include 'edit_profile.php';
-// Close the database connection
 mysqli_close($connection);
 ?>

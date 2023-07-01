@@ -10,6 +10,10 @@
     margin: 0;
     padding: 0;
 }
+#wa{
+    background-color: #25d366;
+    border: none;
+}
 .cont{
     display: flex;
     justify-content: center;

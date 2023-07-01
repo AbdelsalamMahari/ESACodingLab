@@ -32,6 +32,14 @@ body{
   background-attachment: scroll;
   border-radius: 20px;
 }
+.donation-content{
+  margin: 30px 40px;
+  padding: 30px;
+  min-height: 30vh;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 
 .books-for-all {
   display: flex;
@@ -68,6 +76,10 @@ body{
   border: 4px solid black;
   border-radius: 50px;
   animation: colorChange 6s infinite;
+}
+.main{
+  margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 @keyframes colorChange {
@@ -140,7 +152,10 @@ body{
   padding: 20px;
   font-size: 20px;
   color: #fff;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2)
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-cont p {
@@ -171,7 +186,10 @@ body{
   padding: 20px;
   font-size: 20px;
   color: #fff;
-  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.2)
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-cont1 p {
@@ -680,6 +698,16 @@ h1 {
 }
 
 @media (max-width: 840px) {
+  .first-sec{
+    background: url(https://cdn.hovia.com/app/uploads/bright-bookcase-design-room-820x532.jpg);
+    margin: 0px 40px;
+    min-height: 40vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    border-radius: 20px;
+  }
   header h1 {
     font-weight: bold;
     font-size: 20px;

@@ -65,19 +65,19 @@ if (isset($_SESSION["email"])) {
         </li>
     <?php } else { ?>
         <li>
-            <a class="dropdown-item" href="http://localhost/lms/login.php"><i class="fa-solid fa-arrow-right-to-bracket"></i>LOGIN</a>
+            <a class="dropdown-item" href="login.php"><i class="fa-solid fa-arrow-right-to-bracket"></i>LOGIN</a>
         </li>
         <li>
-            <a class="dropdown-item" href="http://localhost/lms/signup.php"><i class="fa-solid fa-user-plus"></i>SIGN UP</a>
+            <a class="dropdown-item" href="signup.php"><i class="fa-solid fa-user-plus"></i>SIGN UP</a>
         </li>
     <?php } ?>
                 </ul>
                 <?php if(isset($_SESSION["email"])) { ?>
-                    <a href="http://localhost/lms/favorite.php"><i class="fa-solid fa-heart fa-heart-e"></i></a>
-                    <a href="http://localhost/lms/cart.php"><i class="fa-solid fa-cart-shopping fa-cart-shopping-e"></i></a>
+                    <a href="favorite.php"><i class="fa-solid fa-heart fa-heart-e"></i></a>
+                    <a href="cart.php"><i class="fa-solid fa-cart-shopping fa-cart-shopping-e"></i></a>
                 <?php } else { ?>
-                    <a href="http://localhost/lms/login.php"><i class="fa-solid fa-heart fa-heart-e"></i></a>
-                    <a href="http://localhost/lms/login.php"><i class="fa-solid fa-cart-shopping fa-cart-shopping-e"></i></a>
+                    <a href="login.php"><i class="fa-solid fa-heart fa-heart-e"></i></a>
+                    <a href="login.php"><i class="fa-solid fa-cart-shopping fa-cart-shopping-e"></i></a>
                 <?php } ?>
                 <a href="#" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                     data-bs-toggle="dropdown" aria-expanded="false"><i
@@ -96,7 +96,7 @@ if (isset($_SESSION["email"])) {
         <hr class="my-hr none-hr">
         <section class="head-down">
             <div class="logo">
-            <a href="http://localhost/lms/index.php" class="logo-title"><h1>BOOK<span>STORE</span></h1></a>
+            <a href="index.php" class="logo-title"><h1>BOOK<span>STORE</span></h1></a>
             </div>
             <div class="hamburger">
                 <div class="line"></div>
@@ -106,16 +106,16 @@ if (isset($_SESSION["email"])) {
             <nav class="nav-bar">
                 <ul>
                     <li>
-                        <a href="http://localhost/lms/books.php">SHOP</a>
+                        <a href="books.php">SHOP</a>
                     </li>
                     <li>
-                        <a href="room.php" class="active">ROOMS</a>
+                        <a href="reservation.php" class="active">ROOMS</a>
                     </li>
                     <li>
-                        <a href="http://localhost/lms/contactus.php">CONTACT US</a>
+                        <a href="contactus.php">CONTACT US</a>
                     </li>
                     <li>
-                        <a href="">ABOUT US</a>
+                        <a href="aboutus.php">ABOUT US</a>
                     </li>
                 </ul>
             </nav>

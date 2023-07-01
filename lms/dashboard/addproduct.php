@@ -23,50 +23,9 @@
 
 <body>
     <div class="page-container">
-        <!--================================-->
-        <!-- Page Sidebar Start -->
-        <!--================================-->
-        <div class="page-sidebar">
-            <div class="logo">
-                <a class="logo-img" href="index.html">
-                    <img class="desktop-logo" src="../images/logo1.png" alt="">
-                    <img class="small-logo" src="" alt="">
-                </a>
-
-            </div>
-            <!--================================-->
-            <!-- Sidebar Menu Start -->
-            <!--================================-->
-            <div class="page-sidebar-inner">
-                <div class="page-sidebar-menu">
-                    <ul class="accordion-menu">
-                        <li>
-                            <a href=""><i data-feather="home"></i>
-                                <span>Dashboard</span></a>
-                        </li>
-                        <li>
-                            <a href=""><i data-feather="package"></i>
-                                <span>Product</span><i class="accordion-icon fa fa-angle-left"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Category 1</a></li>
-                                    <li><a href="#">Category 2</a></li>
-                                    <li><a href="#">Category 3</a></li>
-                                </ul>
-                        </li>
-                        <li>
-                            <a href=""><i data-feather="user"></i>
-                                <span>Users</span><i class="accordion-icon fa fa-angle-left"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Online</a></li>
-                                    <li><a href="#">All</a></li>
-                                    <li><a href="#">Subscribers</a></li>
-                                </ul>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
+       <?php
+       include 'sidebar.php'
+       ?>
         <div class="page-content">
             <div class="page-header">
                 <nav class="navbar navbar-expand-lg">
@@ -116,7 +75,6 @@
                                 <option selected disabled value="">Choose...</option>
                                 <?php
                         include 'connection.php';
-                        // Assuming you have established a database connection
                         $sql = "SELECT `category_id`, `category_name` FROM `categories`";
                         $result = mysqli_query($connection, $sql);
     

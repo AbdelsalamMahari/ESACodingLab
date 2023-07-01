@@ -33,9 +33,7 @@ $sql = "SELECT b.book_id, b.book_img, b.book_name, b.book_price, b.borrow_price,
         FROM addcart c
         JOIN books b ON c.cart_book_id = b.book_id WHERE cart_user_email='$email'";
 $result = mysqli_query($connection, $sql);
-
 ?>
-
 
 <div class="col-10">
 <div class="themsg">
@@ -116,15 +114,11 @@ if (isset($_SESSION["msg"])) {
                     <button type="submit" name="delete" class="btn btn-danger" id="btn-danger3"><i class="fa-solid fa-trash"></i></button>
                 </form>
             </td>';
-            
-
-            
             echo '</tr>';
         }
 
         echo '</tbody>';
         echo '</table>';
-
         echo '<div style="text-align: right;">';
         echo '<p><b>Purchase Total:  </b>' . $purchaseTotal . ' $</p>';
         echo '<p><b>Borrow Total:  </b>' . $borrowTotal . ' $</p>';

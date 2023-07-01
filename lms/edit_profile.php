@@ -13,15 +13,12 @@ include 'connection.php';
     $result = mysqli_query($connection, $sql);
 
     if (mysqli_num_rows($result) > 0) {
-        // Assuming the query returns only one row, you can use mysqli_fetch_assoc to fetch the row as an associative array
         $row = mysqli_fetch_assoc($result);
 
-        // Store the values in variables
         $fname = $row['db_fname'];
         $lname = $row['db_lname'];
 
     } else {
-        // Handle the case where no matching row is found
         echo "No matching record found.";
     }
   }
