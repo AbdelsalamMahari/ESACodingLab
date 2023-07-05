@@ -18,24 +18,30 @@
                 <div class="footer-title">
                     <h3>Discover</h3>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">BOOKS</a></li>
-                        <li><a href="#">SEARCH</a></li>
+                        <li><a href="index.php">HOME</a></li>
+                        <li><a href="books.php">BOOKS</a></li>
+                        <li><a href="room.php">ROOMS</a></li>
                     </ul>
                 </div>
                 <div class="footer-title">
                     <h3>My Account</h3>
                     <ul>
-                        <li><a href=" #">SIGN IN</a></li>
-                        <li><a href="#">VIEW CART</a></li>
-                        <li><a href="#">MY WISHLIST</a></li>
+                        <?php if(isset($_SESSION["email"])) { ?>
+                        <li><a href="logout.php">LOGOUT</a></li>
+                        <li><a href="cart.php">VIEW CART</a></li>
+                        <li><a href="favorite.php">MY WISHLIST</a></li>
+                        <?php } else { ?>
+                        <li><a href="login.php">SIGN IN</a></li>
+                        <li><a href="login.php">VIEW CART</a></li>
+                        <li><a href="login.php">MY WISHLIST</a></li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="footer-title">
                     <h3>Who We Are</h3>
                     <ul>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="aboutus.php">ABOUT US</a></li>
+                        <li><a href="contactus.php">CONTACT US</a></li>
                         <li><a href="#">DONATE</a></li>
                     </ul>
                 </div>

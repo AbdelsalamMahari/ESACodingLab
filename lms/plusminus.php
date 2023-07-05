@@ -15,7 +15,7 @@ if (isset($_GET['type']) && isset($_GET['ID']) && isset($_GET['status'])) {
     $purchaseOption = $_GET['status'];
 
     if ($purchaseOption == 'purchase') {
-        $minQty = 1; // Minimum quantity for purchase
+        $minQty = 1;
         if ($type == 'plus') {
             $sql = "UPDATE addcart c
             JOIN books ON c.cart_book_id = books.book_id 
@@ -29,9 +29,8 @@ if (isset($_GET['type']) && isset($_GET['ID']) && isset($_GET['status'])) {
             mysqli_query($connection, $sql);
             mysqli_query($connection, $sqll);
 
-        // Check if cart quantity is equal to book quantity
         if (mysqli_affected_rows($connection) === 0) {
-            $bookName = ""; // Variable to store the book name
+            $bookName = "";
             $bookQuery = "SELECT book_name FROM books WHERE book_id = '$ID'";
             $bookResult = mysqli_query($connection, $bookQuery);
             
@@ -61,8 +60,8 @@ if (isset($_GET['type']) && isset($_GET['ID']) && isset($_GET['status'])) {
     }
 
     if ($purchaseOption == 'borrow') {
-        $minQty = 1; // Minimum quantity for borrow
-        $maxQty = 1; // Maximum quantity for borrow
+        $minQty = 1;
+        $maxQty = 1;
         if ($type == 'plus') {
             $sql = "UPDATE addcart c
             JOIN books ON c.cart_book_id = books.book_id 

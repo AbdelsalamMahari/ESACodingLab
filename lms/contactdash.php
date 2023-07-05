@@ -1,17 +1,13 @@
 <?php
 include 'connection.php';
 
-// Prepare and execute an SQL statement to fetch data from the contact_form table
 $stmt = $connection->prepare("SELECT name, email, subject, message FROM contactus");
 $stmt->execute();
 
-// Bind the result to variables
 $stmt->bind_result($name, $email, $subject, $message);
 
-// Create an array to store the fetched data
 $contacts = [];
 
-// Fetch and store the data in the array
 while ($stmt->fetch()) {
     $contacts[] = [
         'name' => $name,
@@ -21,7 +17,6 @@ while ($stmt->fetch()) {
     ];
 }
 
-// Close the database connection
 $stmt->close();
 $connection->close();
 ?>

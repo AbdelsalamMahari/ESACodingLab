@@ -52,6 +52,18 @@ include 'header.php';
         </div>
     </section>
 
+    <hr class="hr-divid">
+
+    <section class="donation-section">
+    <div class="donation-content">
+        <h1 class="donation-title">Donation</h1>
+        <p class="thank-you-message">Thank you all for your contributions!</p>
+        <p class="donation-line">We have received a total of X donations.</p>
+    </div>
+   </section>
+
+    <hr class="hr-divid">  
+
     <section class="description">
         <div class="left-part">
             <div class="left-img">
@@ -64,11 +76,9 @@ include 'header.php';
                     of supporting charitable initiatives. With our unique donation program, we are dedicated to making a
                     positive impact on society while promoting a love for reading.<br><br>
 
-                    Every time you borrow a book from our Book store, <b>a portion the rental fee will be
+                    Every time you borrow a book from our Book store, <b>the rental fee will be
                         automatically
-                        transformed into a donation</b>. These donations go directly to reputable charitable
-                    institutions that
-                    focus on promoting literacy, education, and access to books for those in need.</p>
+                        transformed into a donation</b>. These donations go directly to reputable charities focused on promoting literacy and education.</p>
             </div>
         </div>
     </section>
